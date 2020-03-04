@@ -6,15 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".PrincipalActivity">
 
-    <EditText
-        android:id="@+id/editEmail"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifDragao"
+        android:layout_width="277dp"
+        android:layout_height="146dp"
+
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dragonzinho" />
+
+    <ImageView
+        android:id="@+id/backgroundText"
+        android:layout_width="269dp"
+        android:layout_height="358dp"
+        android:layout_below="@+id/gifDragao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        app:srcCompat="@drawable/borda" />
+
+    <TextView
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="180dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="82dp" />
+        android:layout_alignTop="@+id/backgroundText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:text="Ideia do APP" />
+
+    <TextView
+        android:id="@+id/corpoTexto"
+        android:layout_width="221dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/titulo"
+        android:layout_alignEnd="@+id/backgroundText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="18dp"
+        android:text='A ideia principal do app era ser um jogo online onde recriaria um mmo no mundo real, transformando a ilha de florianópolis em uma grande arena em que dependendo da area que o jogador estivesse os monstros teriam niveis de dificuldade e drop de itens diferente, os jogadores tambem poderiam criar grupos para jogarem juntos. PS: acabei de descobrir que ja existe um jogo assim, mesmo assim gostaria de fazer minha verção fora da SA(o nome do jogo é "Orna")'
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
 </RelativeLayout>

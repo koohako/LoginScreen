@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".CadastroActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="214dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/borda"
+        android:text="Usuario"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#008FFD" />
+
+    <EditText
+        android:id="@+id/editIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNome"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Idade"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#008FFD" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editIdade"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textColorHint="#008FFD" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#008FFD" />
+
+    <EditText
+        android:id="@+id/editCSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#008FFD" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/borda"
+        android:onClick="onClickSalvar"
+        android:text="Salvar"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/btnVoltar"
+        android:layout_width="69dp"
+        android:layout_height="61dp"
+        android:backgroundTint="#008FFD"
+        android:background="@drawable/borda"
+        android:onClick="onClickVoltar"
+        android:tint="#00FFFFFF"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+</RelativeLayout>

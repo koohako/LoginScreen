@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:backgroundTint="#008FFD"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#008FFD"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#008FFD"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:shadowColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#008FFD"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@+id/btnCadastrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#008FFD"
+        android:background="@drawable/borda"
+        android:onClick="onClickPrincipal"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#008FFD"
+        android:background="@drawable/borda"
+        android:onClick="onClickCadastro"
+        android:text="Cadastrar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="277dp"
+        android:layout_height="146dp"
+        android:layout_below="@+id/textView"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:src="@drawable/dragonzinho" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borda"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+</RelativeLayout>
